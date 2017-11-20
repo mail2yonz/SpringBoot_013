@@ -64,18 +64,21 @@ public class HomeController {
 
         //     byte[] uploadResult=cloudc.upload ( file.getBytes (),ObjectUtils. ( "resourcetype","auto" ) );
             actor.setHeadshot ( uploadResult.get ( "url" ).toString () );
+            System.out.println (actor.getHeadshot () );
             movie.getTitle ();
             movie.getYear ();
-            movie.addActor ( actor );
+//            movie.addActor ( actor );
+            movieRepository.save ( movie );
             actor.addMovie ( movie );
             actorRepository.save ( actor );
+            System.out.println ( actorRepository.count ());
 //            movie.setTitle ( movie.getTitle () );
 //            movie.setYear ( movie.getYear () );
 //            movie.setDescription ( movie.getDescription () );
 
 
 
-            movieRepository.save ( movie );
+
 
 
 

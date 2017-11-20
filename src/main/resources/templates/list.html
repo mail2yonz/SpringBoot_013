@@ -12,14 +12,14 @@
 
     <h6 th:inline="text">AKA[[${actor.realname}]]</h6>
 
+    <span th:if="${actor.headshot}" th:text="${actor.headshot}"></span>
+
 
 
     <ul>
-        <th:block th:each="movie: ${actor.movies}">
+        <th:block th:each="aMovie: ${actor.movies}">
 
-            <li th:inline="text"><b>[[${movie.title}]]</b> released in [[${movie.year}]].</li>
-
-
+            <li th:inline="text"><b>[[${aMovie.title}]]</b> released in [[${aMovie.year}]].</li>
         </th:block>
 
     </ul>

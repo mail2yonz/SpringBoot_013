@@ -25,16 +25,16 @@ public class Actor {
         this.headshot = headshot;
     }
 
-    private static  Byte[] image;
+//    private static  Byte[] image;
+//
 
 
 
 
-
-    public void setImage(Byte[] image) {
-        Actor.image = image;
-    }
-
+//    public void setImage(Byte[] image) {
+//        Actor.image = image;
+//    }
+//
 
 
 
